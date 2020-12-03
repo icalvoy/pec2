@@ -4,16 +4,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Festival</title>
+    <title>Udako Festibala</title>
   </head>
   <body>
 
 
     <header class="header--fixed">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="/assets/images/logo_uf.png" />
+        <a href="index.html"><img src="/assets/images/logo_uf.png" alt="Logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,89 +41,106 @@
 
 
     <main>
-    <div class="content">
-		  <h1>Contacto</h1>
-      <div class="col">
-        <p>Donde estamos</p>
-        <p>Zurriola Ibilbidea, s/n, <br />
-          20002 Donostia-San Sebastian
-          </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11609.777393514307!2d-1.98503145559372!3d43.32589001614071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a545ca50f7ad%3A0xa0cdb8f84c1597be!2sPlaya%20de%20Zurriola!5e0!3m2!1ses!2ses!4v1605867723153!5m2!1ses!2ses" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="content">
+        <h1>Contacto</h1>
+        <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+          amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+          pariatur accusamus veniam.</p>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Donde estamos</h3>
+                <p>Zurriola Ibilbidea, s/n, <br />
+                  20002 Donostia-San Sebastian
+                </p>
+                <div>
+                  <i class="fas fa-phone"></i>
+                  <p>+ 34 943 123 456<br/>
+                    Lun - Vie, 10:00 - 20:00</p>
+                </div>
+        
+                <div>
+                  <i class="fas fa-envelope"></i>
+                  <p><a href="mailto:info@udako-festibala.com" class="card-link">info@udako-festibala.com</a></p>
+                </div>
+                
+              </div>
+            </div>
+         </div>
+  
+  
+         <div class="col-lg-7">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11609.777393514307!2d-1.98503145559372!3d43.32589001614071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a545ca50f7ad%3A0xa0cdb8f84c1597be!2sPlaya%20de%20Zurriola!5e0!3m2!1ses!2ses!4v1605867723153!5m2!1ses!2ses" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          </div>
+        </div>
+  
 
-      </div>
-
-
-
-
-    </div>
-
-    </main>
+  
+      </main>
 
 
 
 
 
-
-    
     <footer>
       <div class="footer__contenido1">
     
-        <p><strong>NEWSLETTER</strong></p>
+        <p class="footer-title"><strong>NEWSLETTER</strong></p>
+        <hr />
         <p>¡¡Subscribete a nuestro newsletter y recibe todas las novedades a cerca del festival!!</p>
 
-       <div class="footer-form">
-      <form>
-          <div class="mb-3">
-            <label for="Form-email1">Tu email</label>
-            <input type="text" id="Form-email1" class="form-control">
-            
-          </div>
-          <div class="text-center mb-3">
-            <button type="button" class="btn purple-gradient btn-block btn-rounded">Enviar</button>
-          </div>
-        </form>
+        <div class="footer-form">
+          <form>
+            <div class="mb-3">
+              <input type="text" id="Form-email1" class="form-control" placeholder="Escribe aquí tu email">
+            </div>
+            <div class="text-center mb-3">
+              <button type="button" class="btn btn-outline-light purple-gradient text-uppercase px-5">Enviar</button>
+            </div>
+          </form>
         </div>
-    </div>
+      </div>
 
-        <div class="footer__contenido2">
-          <div class="row">
+      <div class="footer__contenido2">
+        <div class="row">
+          <div class="col-md-3 mb-md-0 mb-3">
+            <img src="/assets/images/logo_uf.png" />
+          </div>
+          <div class="col-md-6 mt-md-0 mt-3 mb-3">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bands.html">Bands</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="col-md-3 mb-md-0 mb-3">
-              <img src="/assets/images/logo_uf.png" />
-            </div>
-
-            <div class="col-md-6 mt-md-0 mt-3 mb-3">
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="bands.html">Bands</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-3 mb-md-0 mb-3">
-              <div class="flex-center">
-                <a href="#">
-                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3"> </i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3"> </i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3"> </i>
-                </a>
-              </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <div class="flex-center">
+              <a href="#">
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3"> </i>
+              </a>
+              <a href="#">                  
+                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3"> </i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3"> </i>
+              </a>
             </div>
           </div>
         </div>
+      </div>
     </footer>
 
 

@@ -2,39 +2,35 @@
  * CONTENTS
  *
  * BASE
- * Común..................Estilo H1, hr, progress.
+ * Común..................Estilo H1, H2.
  *
  * COMPONENTS
  * Header.................Sección header.
- * Personal...............Sección personal.
- * Experiencia............Sección experiencia.
- * Formación..............Sección formación.
- * Habilidades............Sección habilidades.
  * Footer.................Sección footer.
+ * Home...................Página de inicio
  */
 
 
 body {
-  margin: 0;
-  padding: 0;
-  background-image:linear-gradient(180deg,#f2b862 0,rgba(242,184,98,0) 320px),linear-gradient(0deg,#fffaf4 50%,#fffaf4);
+  background-image: linear-gradient(180deg, #f2b862 0, rgba(242, 184, 98, 0) 320px), linear-gradient(0deg, #fffaf4 50%, #fffaf4);
   background-repeat: no-repeat;
   color: $uf-corporate;
+  margin: 0;
+  padding: 0;
 }
 
-header.inicio {
+.inicio {
   position: absolute;
-  z-index: 3;
   width: 100%;
+  z-index: 3;
 }
 
 .home {
+  background-color: #ccc;
   background-image: url('/assets/images/fondo.jpg');
-  background-color: #cccccc; 
-  height: 800px; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   top: 0;
   z-index: 1;
@@ -45,7 +41,18 @@ header.inicio {
   max-width: 1024px;
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 30px 15px 70px;
+}
+
+.content h2 {
+  margin: 40px 0;
+}
+
 h1 {
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -54,10 +61,20 @@ h2 {
 }
 
 
+.map-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+  position: relative;
+}
 
-
-
-
+.map-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 
 
@@ -67,42 +84,41 @@ h2 {
 
 .home button {
   border: 0;
-  text-transform: uppercase;
+  bottom: 1em;
   font-size: 100%;
+  left: 1em;
   padding: 1em 2em;
   position: absolute;
-  left: 1em;
-  bottom: 1em;
+  text-transform: uppercase;
 }
 
-.home h1{
-  font-size: 4.5rem;
-  text-shadow: 3px -1px #fff;
+.home h1 {
   color: #dcdcdc;
+  font-size: 4.5rem;
+  text-shadow: 4px 2px #999;
 }
 
-.home h2{
+.home h2 {
+  color: #6b6565;
   font-size: 3.5rem;
   text-shadow: 3px -1px #fff;
-  color: #6b6565;
 }
 
 // Grid layout for wide display
 @supports (display:grid) {
   @media (min-width: 42em) and (min-height: 27em) {
     .home {
-      padding: 0;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 100px 1fr 1fr 1fr;
+      padding: 0;
     }
 
     .home h1 {
       grid-column: 2/2;
       grid-row: 3/3;
-      z-index: 2;
       margin-bottom: initial;
-      text-shadow: 4px 2px #999;
+      z-index: 2;
     }
 
     .home h2 {
@@ -119,8 +135,17 @@ h2 {
 }
 
 @media (max-width: 42em) {
+  .home {
+    min-height: 550px;
+  }
+  
   .home h1 {
     padding-top: 165px;
+    font-size: 3.5rem;
+  }
+  
+  .home h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -154,14 +179,14 @@ h2 {
 }
 
 .grupo__informacion h2 {
-  text-align: center;
   font-size: 28px;
   margin: 10px 0;
+  text-align: center;
 }
 
 .grupo__informacion h3 {
-  text-align: center;
   font-size: 22px;
+  text-align: center;
 }
 
 
@@ -180,18 +205,18 @@ h2 {
 }
 
 .footer__contenido2 a:hover {
-  color: #663399;
+  color: #639;
 }
 
 .footer__contenido1 {
-  text-align: center;
-  margin: 0 auto; 
-  background-color: lavender;
+  background-color: #e6e6fa;
+  margin: 0 auto;
   padding: 30px;
+  text-align: center;
 }
 
 .purple-gradient {
-  background: linear-gradient(40deg,#ff6ec4,#7873f5) !important;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
 }
 
 .footer-form {
