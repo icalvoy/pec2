@@ -2,12 +2,13 @@
  * CONTENTS
  *
  * BASE
- * Común..................Estilo H1, H2.
+ * Común..................Estilo Body, H1, H2.
  *
- * COMPONENTS
- * Header.................Sección header.
+ * COMPONENTS / PAGES
  * Footer.................Sección footer.
  * Home...................Página de inicio
+ * Bands...................Página bands.html
+ * Contact...................Página contact.html
  */
 
 
@@ -19,21 +20,13 @@ body {
   padding: 0;
 }
 
-.inicio {
-  position: absolute;
-  width: 100%;
-  z-index: 3;
+h1 {
+  padding: 30px 0;
+  text-align: center;
 }
 
-.home {
-  background-color: #ccc;
-  background-image: url('/assets/images/fondo.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: 0;
-  z-index: 1;
+h2 {
+  text-align: center;
 }
 
 .content {
@@ -51,36 +44,72 @@ body {
   margin: 40px 0;
 }
 
-h1 {
-  padding: 30px 0;
+.purple-gradient {
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-FOOTER
+\*------------------------------------*/
+
+.footer__contenido2 {
+  padding: 40px 0;
   text-align: center;
 }
 
-h2 {
+.footer__contenido2 a {
+  color: $uf-corporate;
+}
+
+.footer__contenido2 a:hover {
+  color: $uf-footer-hover;
+}
+
+.footer__contenido1 {
+  background-color: $uf-footer1;
+  margin: 0 auto;
+  padding: 30px;
   text-align: center;
 }
 
-
-.map-container {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 60%;
-  position: relative;
+.footer-form {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-.map-container iframe {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.footer-title {
+  font-size: 30px;
+  letter-spacing: 2px;
 }
+
+
 
 
 
 /*------------------------------------*\
   #SECTION-HOME
 \*------------------------------------*/
+
+.header-inicio {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.home {
+  background-color: #ccc;
+  background-image: url('/assets/images/fondo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
 
 .home button {
   border: 0;
@@ -104,7 +133,7 @@ h2 {
   text-shadow: 3px -1px #fff;
 }
 
-// Grid layout for wide display
+
 @supports (display:grid) {
   @media (min-width: 42em) and (min-height: 27em) {
     .home {
@@ -138,7 +167,7 @@ h2 {
   .home {
     min-height: 550px;
   }
-  
+
   .home h1 {
     padding-top: 165px;
     font-size: 3.5rem;
@@ -192,40 +221,22 @@ h2 {
 
 
 
+
 /*------------------------------------*\
-  #SECTION-FOOTER
+  #SECTION-CONTACT
 \*------------------------------------*/
-.footer__contenido2 {
-  padding: 40px 0;
-  text-align: center;
+
+.map__container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+  position: relative;
 }
 
-.footer__contenido2 a {
-  color: $uf-corporate;
+.map__container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-
-.footer__contenido2 a:hover {
-  color: #639;
-}
-
-.footer__contenido1 {
-  background-color: #e6e6fa;
-  margin: 0 auto;
-  padding: 30px;
-  text-align: center;
-}
-
-.purple-gradient {
-  background: linear-gradient(40deg, #ff6ec4, #7873f5);
-}
-
-.footer-form {
-  margin: 0 auto;
-  max-width: 500px;
-}
-
-.footer-title {
-  font-size: 30px;
-  letter-spacing: 2px;
-}
-
